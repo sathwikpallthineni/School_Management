@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "92488f25-593a-407d-9dbd-68c4aeae6c48",
+    "name": "School_Management APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54871877",
+    "_collection_link": "https://go.postman.co/collection/54871877-92488f25-593a-407d-9dbd-68c4aeae6c48?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\":\"new era high School\",\r\n  \"address\":\"Hyderabad\",\r\n  \"latitude\":17.3850,\r\n  \"longitude\":78.4867\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://school-management-vspn.onrender.com/addSchool",
+          "protocol": "https",
+          "host": [
+            "school-management-vspn",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://school-management-vspn.onrender.com/getSchools?latitude=17.3850&longitude=78.4867",
+          "protocol": "https",
+          "host": [
+            "school-management-vspn",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "getSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "17.3850"
+            },
+            {
+              "key": "longitude",
+              "value": "78.4867"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
